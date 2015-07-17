@@ -9,6 +9,8 @@ var Thermostat = function() {
   Thermostat.prototype.up = function () {
     if (this._powerSaving && this._temp < 25) {
       this._temp ++;
+    } else if (!this._powerSaving && this._temp < 32) {
+      this._temp ++;
     };
   };
 
