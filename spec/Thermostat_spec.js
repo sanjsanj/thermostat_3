@@ -33,5 +33,14 @@ describe('Thermostat', function() {
   it('has power saving toggle button', function() {
     thermostat.toggle();
     expect(thermostat.powerSaving()).toEqual(false);
+    thermostat.toggle();
+    expect(thermostat.powerSaving()).toEqual(true);
+  });
+
+  it('maximum temp is 25 when power saving is on', function() {
+    for (var i = 0; i < 20; i ++) {
+      thermostat.up();
+    };
+    expect(thermostat.temp()).toEqual(25);
   });
 });
