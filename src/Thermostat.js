@@ -27,4 +27,8 @@ var Thermostat = function() {
   Thermostat.prototype.toggle = function () {
     this._powerSaving = !this._powerSaving;
   };
+
+  Thermostat.prototype.resetButton = function () {
+    this._temp = 20;
+  };
 };

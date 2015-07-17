@@ -51,4 +51,20 @@ describe('Thermostat', function() {
     };
     expect(thermostat.temp()).toEqual(32);
   });
+
+  it('reset button resets temp to 20 when it\'s more than 20', function() {
+    for (var i = 0; i < 20; i ++) {
+      thermostat.up();
+    };
+    thermostat.resetButton();
+    expect(thermostat.temp()).toEqual(20);
+  });
+
+  it('reset button resets temp to 20 when it\'s less than 20', function() {
+    for (var i = 0; i < 20; i ++) {
+      thermostat.down();
+    };
+    thermostat.resetButton();
+    expect(thermostat.temp()).toEqual(20);
+  });
 });
