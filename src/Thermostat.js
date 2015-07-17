@@ -4,4 +4,8 @@ var Thermostat = function() {
   Thermostat.prototype.temp = function () {
     return this._temp;
   };
+
+  Thermostat.prototype.up = function () {
+    this._temp ++;
+  };
 };
