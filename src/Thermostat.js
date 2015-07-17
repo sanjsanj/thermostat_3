@@ -10,6 +10,8 @@ var Thermostat = function() {
   };
 
   Thermostat.prototype.down = function () {
-    this._temp --;
+    if (this._temp > 10) {
+      this._temp --;
+    };
   };
 };
