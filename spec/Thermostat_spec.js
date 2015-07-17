@@ -25,4 +25,13 @@ describe('Thermostat', function() {
     };
     expect(thermostat.temp()).toEqual(10);
   });
+
+  it('has power saving mode on by default', function() {
+    expect(thermostat.powerSaving()).toEqual(true);
+  });
+
+  it('has power saving toggle button', function() {
+    thermostat.toggle();
+    expect(thermostat.powerSaving()).toEqual(false);
+  });
 });
