@@ -1,0 +1,22 @@
+{
+  "name": "thermostat_3",
+  "version": "0.0.0",
+  "homepage": "https://github.com/sanjsanj/thermostat_3",
+  "authors": [
+    "sanjsanj <sanjsanj@hotmail.com>"
+  ],
+  "main": "App.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.3"
+  }
+}
