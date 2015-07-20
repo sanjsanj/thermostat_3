@@ -2,5 +2,9 @@
 
 ###To run tests:
 ```
+*jasmine*
 $ open SpecRunner.html
+
+*karma*
+$ npm test
 ```

@@ -1,4 +1,5 @@
 describe('ThermostatController', function() {
+
   beforeEach(module('Thermostat'));
 
   var ctrl;
