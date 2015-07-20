@@ -10,7 +10,7 @@ describe('ThermostatController', function() {
 
   describe('Initializes with', function() {
     it('temp at 20 degrees', function() {
-      expect(ctrl.temp).toEqual(20);
+      expect(ctrl.temp()).toEqual(20);
     });
   });
 });
