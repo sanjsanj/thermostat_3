@@ -2,7 +2,7 @@
 <html lang="en" ng-app="Thermostat">
 <head>
   <meta charset="utf-8">
-  <title>Thermostat</title>
+  <title>Thermostat in Angular</title>
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -11,8 +11,8 @@
   <script src="src/Thermostat.js"></script>
 
 </head>
-<body ng-controller="Thermostat">
+<body ng-controller="ThermostatController as ctrl">
   <h1>Thermostat</h1>
-  {{Thermostat.temp}}
+  {{ctrl.temp()}}
 </body>
 </html>

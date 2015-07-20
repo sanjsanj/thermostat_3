@@ -1,15 +1,15 @@
-thermostat.controller('Thermostat', [function() {
+thermostat.controller('ThermostatController', [function() {
 
 var self = this;
 
 self._temp = 20;
 self._powerSaving = true;
 
-  self.temp = function () {
+  self.temp = function() {
     return self._temp;
   };
 
-  self.up = function () {
+  self.up = function() {
     if (self._powerSaving && self._temp < 25) {
       self._temp ++;
     } else if (!self._powerSaving && self._temp < 32) {
@@ -17,21 +17,21 @@ self._powerSaving = true;
     };
   };
 
-  self.down = function () {
+  self.down = function() {
     if (self._temp > 10) {
       self._temp --;
     };
   };
 
-  self.powerSaving = function () {
+  self.powerSaving = function() {
     return self._powerSaving;
   };
 
-  self.toggle = function () {
+  self.toggle = function() {
     self._powerSaving = !self._powerSaving;
   };
 
-  self.resetButton = function () {
+  self.resetButton = function() {
     self._temp = 20;
   };
 }]);
