@@ -2,9 +2,9 @@
 
 ###To run tests:
 ```
-*jasmine*
+*Jasmine unit tests for JavaScript*
 $ open SpecRunner.html
 
-*karma*
+*Karma unit tests for Angular*
 $ npm test
 ```
