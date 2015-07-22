@@ -27,10 +27,13 @@ describe('Thermostat', function() {
   });
 
   it('can toggle power saving mode', function() {
-
+    ctrl.toggle();
+    expect(ctrl.powerSaving()).toEqual(false);
   });
 
   it('can reset the temp', function() {
-
+    ctrl.up();
+    ctrl.resetButton();
+    expect(ctrl.temp()).toEqual(20);
   });
 });
