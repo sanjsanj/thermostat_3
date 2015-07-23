@@ -26,9 +26,31 @@ describe('Thermostat', function() {
     expect(ctrl.temp()).toEqual(19);
   });
 
+  it('max temp is 25 with power saving on', function() {
+    for (var i = 0; i < 20; i ++) {
+      ctrl.up();
+    };
+    expect(ctrl.temp()).toEqual(25);
+  });
+
+  it('max temp is 32 with power saving off', function() {
+    ctrl.toggle();
+    for (var i = 0; i < 20; i ++) {
+      ctrl.up();
+    };
+    expect(ctrl.temp()).toEqual(32);
+  });
+
   it('can toggle power saving mode', function() {
     ctrl.toggle();
     expect(ctrl.powerSaving()).toEqual(false);
+  });
+
+  it('power saving mode brings temp back into range', function() {
+    ctrl.toggle();
+    for (var i = 0; i < 20; i ++) {
+      ctrl.up();
+    };
   });
 
   it('can reset the temp', function() {

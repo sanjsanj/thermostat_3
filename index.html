@@ -14,5 +14,9 @@
 <body ng-controller="ThermostatController as ctrl">
   <h1>Thermostat</h1>
   {{ctrl.temp()}}
+  <button ng-click="ctrl.up()">Up</button>
+  <button ng-click="ctrl.down()">Down</button>
+  <button ng-click="ctrl.toggle()">Eco</button>
+  <button ng-click="ctrl.resetButton()">Reset</button>
 </body>
 </html>
