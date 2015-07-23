@@ -8,3 +8,8 @@ $ open SpecRunner.html
 *Karma unit tests for Angular*
 $ npm test
 ```
+
+###To run app:
+```
+$ open index.html
+```
