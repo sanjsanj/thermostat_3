@@ -23,7 +23,10 @@
           <div class="btn-group" role="group">
             <button type="button" class="btn btn-default" ng-click="ctrl.down()">Down</button>
           </div>
-          <div class="btn-group" role="group">
+          <div ng-show="ctrl.powerSaving()" class="btn-group" role="group">
+            <button type="button" class="btn btn-info" ng-click="ctrl.toggle()">Eco</button>
+          </div>
+          <div ng-hide="ctrl.powerSaving()" class="btn-group" role="group">
             <button type="button" class="btn btn-default" ng-click="ctrl.toggle()">Eco</button>
           </div>
           <div class="btn-group" role="group">
