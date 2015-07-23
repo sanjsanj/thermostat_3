@@ -51,6 +51,8 @@ describe('Thermostat', function() {
     for (var i = 0; i < 20; i ++) {
       ctrl.up();
     };
+    ctrl.toggle();
+    expect(ctrl.temp()).toEqual(25);
   });
 
   it('can reset the temp', function() {

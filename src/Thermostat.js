@@ -29,6 +29,9 @@ self._powerSaving = true;
 
   self.toggle = function() {
     self._powerSaving = !self._powerSaving;
+    if (self._powerSaving && self._temp > 25) {
+      self._temp = 25;
+    };
   };
 
   self.resetButton = function() {
