@@ -3,20 +3,35 @@
 <head>
   <meta charset="utf-8">
   <title>Thermostat in Angular</title>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="public/stylesheet.css">
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src="src/App.js"></script>
   <script src="src/Thermostat.js"></script>
-
 </head>
 <body ng-controller="ThermostatController as ctrl">
-  <h1>Thermostat</h1>
-  {{ctrl.temp()}}
-  <button ng-click="ctrl.up()">Up</button>
-  <button ng-click="ctrl.down()">Down</button>
-  <button ng-click="ctrl.toggle()">Eco</button>
-  <button ng-click="ctrl.resetButton()">Reset</button>
+  <div class="container-fluid">
+    <div class="col-lg-4 col-lg-offset-4 col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12">
+      <div class="jumbotron">
+        <div class="title"><h2>Thermostat</h2></div>
+        <div class="temp"><h1>{{ctrl.temp()}}</h1></div>
+        <div class="btn-group btn-group-justified" role="group">
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" ng-click="ctrl.up()">Up</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" ng-click="ctrl.down()">Down</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" ng-click="ctrl.toggle()">Eco</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default" ng-click="ctrl.resetButton()">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
