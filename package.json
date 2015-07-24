@@ -4,6 +4,7 @@
   "description": "###To run tests: ``` $ open SpecRunner.html ```",
   "main": "src/App.js",
   "scripts": {
+    "install":"npm i && bower i",
     "test": "karma start test/karma.conf.js"
   },
   "repository": {
