@@ -1,11 +1,10 @@
 module.exports = function(config) {
-  config.set({
+  var configuration = {
     basePath: '../',
     frameworks: ['jasmine'],
     files: [
-      'bower_components/angular/angular.js',
-      'bower_components/angular-route/angular-route.js',
-      'bower_components/angular-mocks/angular-mocks.js',
+      'lib/angular.min.js',
+      'lib/angular-mocks.js',
       'src/**/*.js',
       'test/**/*.js'
     ],
@@ -20,5 +19,5 @@ module.exports = function(config) {
     autoWatch: true,
     browsers: ['PhantomJS'],
     singleRun: true
-  })
+  }
 }
