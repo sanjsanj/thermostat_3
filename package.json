@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sanjsanj/thermostat_3#readme",
   "devDependencies": {
+    "bower": "^1.4.1",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.2",
     "karma-chrome-launcher": "^0.2.0",
